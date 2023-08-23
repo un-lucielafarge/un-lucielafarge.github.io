@@ -83,6 +83,7 @@
     const newsletterButton = document.getElementById('custom');
     newsletterButton.addEventListener('click',()=> {
         newsletterButton.innerHTML = 'Merci, vous êtes maintenant abonné'
+        plausible('Signup')
         dataLayer.push({
             'event' : 'newsletterSubscription',
             'newsletterSubscription' : {
